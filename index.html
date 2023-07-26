@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/10c92a2de9.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.js" integrity="sha512-6m6AtgVSg7JzStQBuIpqoVuGPVSAK5Sp/ti6ySu6AjRDa1pX8mIl1TwP9QmKXU+4Mhq/73SzOk6mbNvyj9MPzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- basic design script -->
     <script>
@@ -18,11 +21,53 @@
           }
         }
       </script>
+      <style>
+        .opensens{
+            font-family: 'Open Sans', sans-serif;;
+        }
+      </style>
     <title>fruit brust assignment3</title>
 </head>
-<body>
-    <header>
 
+<!-- body start here -->
+<body class="opensens">
+    <header>
+        <!-- navigation start here -->
+        <div class="bg-white flex flex-row-reverse lg:flex lg:flex-row justify-between items-center lg:bg-[#F85559] py-2 px-10 rounded-full ">
+            <!-- menu start here -->
+            <div>
+                <div class="flex flex-end">
+                    <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                      </label>
+                 </div>
+            <div class="item-center justify-center">
+             <ul class="hidden lg:flex justify-center item-center gap-8 text-white">
+                  <li><a>Home</a></li>
+                  <li><a>About us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All fruit</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- logo start here -->
+            <div class="flex gap-2 items-center">
+              <img src="images/logo.png" alt="">
+              <h1 class=" text-black text-4xl  lg:text-4xl lg:text-white font-bold">Fruit Burst</h1>
+            </div>
+            <!-- search start here -->
+            <div class="hidden  lg:inline-block">
+                <div class="lg:relative ">
+                    <input type="text" class="w-80 px-3 py-3 text-gray-700 bg-white border rounded-full dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40" placeholder="Search here">
+                    <span class="absolute inset-y-0 right-0 flex items-center">
+                        <svg class="w-5 h-5 mr-5 text-gray-400" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+           </div>
+         
     </header>
     <main>
 
