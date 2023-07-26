@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.js" integrity="sha512-6m6AtgVSg7JzStQBuIpqoVuGPVSAK5Sp/ti6ySu6AjRDa1pX8mIl1TwP9QmKXU+4Mhq/73SzOk6mbNvyj9MPzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- basic design script -->
     <script>
@@ -31,9 +31,9 @@
 
 <!-- body start here -->
 <body class="opensens">
-    <header>
+    <header class="mb-10">
         <!-- navigation start here -->
-        <div class="bg-white flex flex-row-reverse lg:flex lg:flex-row justify-between items-center lg:bg-[#F85559] py-2 px-10 rounded-full ">
+        <div class="mb-10 max-w-6xl m-auto bg-white flex flex-row-reverse md:flex md:flex-row md:bg-[#F85559] lg:flex lg:flex-row justify-between items-center lg:bg-[#F85559] py-2 px-10 rounded-full ">
             <!-- menu start here -->
             <div>
                 <div class="flex flex-end">
@@ -67,7 +67,102 @@
                 </div>
             </div>
            </div>
-         
+          <!-- banner section start here -->
+          <div class="mb-10 container max-w-6xl m-auto ">
+            <div class="carousel w-full rounded-xl">
+              <!-- slider - 01 -->
+              <div id="slide1" class="carousel-item relative w-full">
+                <div class="relative">
+                  <img src="images/banner1.png" class="w-90 relative"/>
+                 <div class="absolute w-full h-full top-0 left-0 bg-black opacity-70">
+                  <div class="absolute space-y-5 left-80 top-40 text-center ">
+                    <h1 class="text-white text-5xl font-bold">Exotic tastes at your <br/> doorstep</h1>
+                    <p class="text-white text-base font-semibold">We supply highly quality organic products</p>
+                    <button class="btn bg-[#ff0000] text-white">Shop Now</button>
+                  </div>
+                 </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide4" class="btn btn-circle">❮</a> 
+                  <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+              <!-- slider - 02 -->
+              <div id="slide2" class="carousel-item relative w-full">
+                <div class="relative">
+                  <img src="images/banner2.png" class="w-90 relative"/>
+                 <div class="absolute w-full h-full top-0 left-0 bg-black opacity-70">
+                  <div class="absolute space-y-5 left-80 top-40 text-center ">
+                    <h1 class="text-white text-5xl font-bold">Exotic tastes at your <br/> doorstep</h1>
+                    <p class="text-white text-base font-semibold">We supply highly quality organic products</p>
+                    <button class="btn bg-[#ff0000] text-white">Shop Now</button>
+                  </div>
+                 </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide1" class="btn btn-circle">❮</a> 
+                  <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+              <!-- slider - 03 -->
+              <div id="slide3" class="carousel-item relative w-full">
+                <div class="relative">
+                  <img src="images/banner3.png" class="w-90 relative"/>
+                 <div class="absolute w-full h-full top-0 left-0 bg-black opacity-70">
+                  <div class="absolute space-y-5 left-80 top-40 text-center ">
+                    <h1 class="text-white text-5xl font-bold">Exotic tastes at your <br/> doorstep</h1>
+                    <p class="text-white text-base font-semibold">We supply highly quality organic products</p>
+                    <button class="btn bg-[#ff0000] text-white">Shop Now</button>
+                  </div>
+                 </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide2" class="btn btn-circle">❮</a> 
+                  <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+              <!-- slider - 04 -->
+              <div id="slide4" class="carousel-item relative w-full">
+                <div class="relative">
+                  <img src="images/banner4.png" class="w-90 relative"/>
+                 <div class="absolute w-full h-full top-0 left-0 bg-black opacity-70">
+                  <div class="absolute space-y-5 left-80 top-40 text-center ">
+                    <h1 class="text-white text-5xl font-bold">Exotic tastes at your <br/> doorstep</h1>
+                    <p class="text-white text-base font-semibold">We supply highly quality organic products</p>
+                    <button class="btn bg-[#ff0000] text-white">Shop Now</button>
+                  </div>
+                 </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide3" class="btn btn-circle">❮</a> 
+                  <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fruit item start here -->
+          <div class="mb-10 w-3/4 m-auto absolute left-40 -bottom-20 flex items-center justify-evenly p-8 bg-white ">
+            <div class="text-center">
+              <img src="images/fruit1.png" alt="">
+              <p>grapes</p>
+            </div>
+             <div class="text-center">
+              <img src="images/fruit2.png" alt="">
+              <p>Orange</p>
+             </div>
+            <div class="text-center">
+              <img src="images/fruit3.png" alt="">
+              <p>Mango</p>
+            </div>
+             <div class="text-center">
+              <img src="images/fruit4.png" alt="">
+              <p>Strawberry</p>
+            </div>
+            <div class="text-center">
+              <img src="images/fruit5.png" alt="">
+              <p>pomegranate</p>
+            </div>
+          </div>
     </header>
     <main>
 
